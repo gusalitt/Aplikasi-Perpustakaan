@@ -19,8 +19,8 @@ Aplikasi perpustakaan berbasis web yang memungkinkan pengguna untuk meminjam, me
 1. [Fitur](#fitur)
 2. [Instalasi](#instalasi)
 3. [Penggunaan](#penggunaan)
-   - [Fitur User](#fitur-user)
-   - [Fitur Admin](#fitur-admin)
+   - [User](#user)
+   - [Admin](#admin)
 4. [Struktur Proyek](#struktur-proyek)
 5. [Teknologi yang Digunakan](#teknologi-yang-digunakan)
 
@@ -49,15 +49,15 @@ Aplikasi perpustakaan berbasis web yang memungkinkan pengguna untuk meminjam, me
 
 Langkah-langkah untuk menginstal proyek ini.
 
-1. **Instal via Git**:
+### 1. **Instal via Git**:
 
    ```bash
    git clone https://github.com/Gus-Alitt/Aplikasi-Perpustakaan.git
    ```
 
-2. **Instal via ZIP**:
+### 2. **Instal via ZIP**:
    1. Klik [di sini](https://github.com/gus-alitt/Aplikasi-Perpustakaan/archive/refs/heads/main.zip) untuk menginstal seluruh project dalam format zip.
-   2. Lalu ekstrak file zip yang di instal.
+   2. Lalu ekstrak file zip yang telah di instal.
 
 ---
 
