@@ -1,0 +1,328 @@
+form button {
+	border: none;
+	background: none;
+	outline: none;
+}
+main.main-daftar {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	width: 100%;
+}
+.container-daftar {
+	background-color: var(--white-bg);
+	border-top: 3px solid var(--main-color);
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.head {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.1rem 1rem 1.2rem 1rem;
+	color: var(--text-color);
+}
+.head h1 {
+	color: #adadad;
+	font-weight: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.head h1 i {
+	font-size: 1.6rem;
+	margin-top: 3px;
+}
+.head .search-box {
+	text-align: center;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	box-shadow: 0 0 2.5px gray;
+	padding: 0 3px 0 0;
+	background-color: #fff;
+}
+.head .search-box i.fa-magnifying-glass {
+	background: var(--main-gradient);
+	color: transparent;
+	background-clip: text;
+	margin-bottom: 2px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	padding: 8px 5px 8px 8px;
+}
+.head .search-box input {
+	width: 100%;
+	border-radius: 0 40px 40px 0;
+	padding: 0.4rem 0.8rem 0.4rem 0.5px;
+	background-color: #fff;
+	color: #000;
+}
+.head .btn {
+	display: flex;
+	gap: 5px;
+	position: relative;
+}
+.head .btn a,
+.head .btn button,
+.head .btn form button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	width: 1.8rem;
+	height: 1.8rem;
+	background: var(--main-gradient);
+	border-radius: 50%;
+	color: #fff;
+	font-size: 1.1rem;
+	cursor: pointer;
+	text-decoration: none;
+}
+.head .btn form button,
+.head .btn a span {
+	font-family: "Ubuntu", sans-serif;
+	background: var(--main-gradient);
+	text-align: center;
+	line-height: 1.8rem;
+	height: 1.8rem;
+	border-radius: 10px;
+	width: 6.3rem;
+	color: #fff;
+	font-size: 0.85rem;
+	position: relative;
+	transition: all 0.3s;
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	right: 100%;
+	margin-right: 0.8rem;
+}
+.head .btn a#printBtn2 span {
+	width: 5.5rem;
+}
+.head .btn a#printBtn span {
+	position: absolute;
+	left: 49%;
+	transform: translateX(-51%);
+	top: 150%;
+	width: 5.5rem;
+}
+.head .btn a .tpengguna {
+	width: 8rem !important;
+}
+.head .btn a span::before,
+.head .btn form button:before {
+	content: "";
+	position: absolute;
+	border-bottom: 8px solid transparent;
+	border-top: 8px solid transparent;
+	border-left: 8px solid #7c00fe;
+	border-right: 8px solid transparent;
+	right: -0.9rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.head .btn a#printBtn span::before {
+	border-left: 8px solid transparent;
+	border-bottom: 8px solid #9f33fe;
+	top: -12.5px;
+	right: 50%;
+	transform: translateX(50%);
+}
+.head .btn button.hapus-semua {
+	right: 0;
+	transform: translateX(26%);
+	top: 150%;
+	z-index: 1;
+	transition: 0.3s;
+}
+.head .btn form button.hapus-semua::before {
+	border-left: 8px solid transparent;
+	border-bottom: 8px solid #8f1dfe;
+	top: -5px;
+	right: 1.55rem;
+}
+.head .btn button.hapus-semua:hover::before {
+	border-bottom: 8px solid #6622a3;
+}
+.head .btn button.hapus-semua:hover {
+	background: linear-gradient(to right, #c266ff, #3d047a);
+}
+.head .btn button.hapus + form button.active {
+	display: block;
+}
+.head .btn a:hover span {
+	display: block;
+}
+.table-container {
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: var(--white-bg);
+	padding: 0 1rem;
+	overflow-x: auto;
+}
+table {
+	background-color: var(--white-bg);
+	border-collapse: collapse;
+	width: 100%;
+	padding: 5rem;
+	margin-bottom: 0.8rem;
+}
+.daftar-pengembalian {
+	margin-bottom: 2.5rem;
+}
+table th,
+table td {
+	padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+	max-width: 100%;
+	text-align: left;
+	color: var(--text-color);
+}
+table td:first-child {
+	padding: 0.5rem 1.5rem 0.5rem 0.7rem;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+table td:last-child {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+table th:last-child,
+table td:last-child {
+	text-align: right;
+	padding-right: 1rem;
+}
+table th {
+	background-color: var(--white-bg);
+	padding: 1.3rem 0 1.3rem 0.5rem;
+}
+table tr:nth-child(odd) {
+	background-color: rgba(123, 0, 254, 0.15);
+}
+table tr:nth-child(even) {
+	background-color: var(--white-bg);
+}
+td .dropdown {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+td .dropbtn,
+td .dropbtn i {
+	background: var(--main-gradient);
+	border-radius: 50%;
+	width: 1.8rem;
+	height: 1.8rem;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+}
+td button.trash {
+	background: red;
+	border-radius: 5px;
+	padding: 8px;
+	cursor: pointer;
+}
+td button.trash i {
+	color: #fff;
+}
+td .dropdown-content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 155%;
+	background: var(--main-gradient);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+	display: none;
+}
+td .dropdown-content.show {
+	display: block;
+}
+td .dropdown-content::before {
+	content: "";
+	position: absolute;
+	border-bottom: 8px solid transparent;
+	border-top: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-left: 8px solid #7c00fe;
+	right: -1rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+td .dropdown-content form button {
+	color: #fff;
+	padding: 0.4rem 0.8rem;
+	font-size: 0.9rem;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	cursor: pointer;
+}
+td .dropdown-content form button:last-child {
+	border-radius: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+td .dropdown-content form a:hover,
+td .dropdown-content form button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+table tr td span.id-data {
+	color: var(--main-color);
+	font-size: 0.9rem;
+}
+td.data-kosong {
+	text-align: center !important;
+	padding: 1.5rem !important;
+	font-size: 1.2rem;
+}
+.info-denda {
+	background: var(--main-gradient);
+	color: #fff;
+	padding: 0.6rem;
+	letter-spacing: 0.8px;
+	font-size: 0.9rem;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: calc(100% - 240px);
+	left: 240px;
+	text-align: center;
+	transition: 0.3s;
+}
+.info-denda.active {
+	width: 100%;
+	left: 0;
+}
+.info-denda p span {
+	color: black;
+	font-weight: 800;
+	padding: 0.6rem;
+	border-radius: 5px;
+	text-align: center;
+}

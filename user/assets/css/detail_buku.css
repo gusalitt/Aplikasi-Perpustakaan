@@ -1,0 +1,183 @@
+section.book-details {
+  padding-top: 65px !important;
+  width: 100%;
+}
+section.book-details-pengembalian,
+section.book-details-peminjaman {
+  padding-top: 85px;
+  width: 100%;
+}
+.details-header {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1.8rem;
+}
+.details-header .img {
+  background-color: var(--white-bg);
+  width: 33%;
+  height: 28rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.details-header .img img {
+  width: 100%;
+  height: 100%;
+}
+.details-header .details-content {
+  width: 67%;
+  height: 28rem;
+  overflow: hidden;
+}
+.tabs {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  min-height: 3rem;
+}
+button[role="tab"] {
+  padding: 0 25px 10px 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  margin: 0 !important;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--text-color);
+  border-bottom: 0px solid var(--main-color);
+}
+button[role="tab"]:hover {
+  color: var(--main-color);
+  border-bottom: 1.5px solid var(--main-color);
+}
+.tabs button[role="tab"][aria-selected="true"] {
+  color: var(--main-color);
+  border-bottom: 1.5px solid var(--main-color);
+}
+div[role="tabpanel"] {
+  display: none;
+  padding: 0;
+}
+div[role="tabpanel"]:not([hidden]) {
+  display: block;
+  padding: 0 10px;
+  margin-top: -.4rem;
+}
+.details-content div#panel1 h2, div#panel2 h2, div#panel3 h2, div#panel5 h2 {
+  color: var(--text-color);
+}
+.details-content div#panel1 p {
+  color: var(--pengarang-color);
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.details-content div#panel1 p span, 
+.details-content div#panel2 p span {
+  background-color: var(--white-bg);
+  padding: 2px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+.details-content div#panel1 button {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1rem;
+  padding: .6rem 1rem;
+  font-size: 1.1rem;
+  background: var(--main-gradient);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.details-content div#panel1 p.login {
+  font-size: .9rem;
+  color: #fff;
+  font-style: italic;
+  background-color: #000;
+  width: max-content;
+}
+.details-content div#panel2 p,
+div#panel3 p,
+.details-story div#panel5 p:not(.message)  {
+  color: var(--text-color);
+  margin-top: 10px;
+  font-size: 1rem;
+  letter-spacing: .8px;
+}
+.details-story {
+  background-color: var(--white-bg);
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.details-story .tabs {
+  padding: 14px 0 0 0;
+}
+.details-story div[role="tabpanel"] {
+  padding: 1rem 1.3rem;
+}
+.details-story div[role="tabpanel"]#panel4 {
+  padding: 1.1rem 1.5rem;
+}
+.details-story .bab {
+  width: 100%;
+  margin: 0 auto 1rem auto;
+}
+.bab h2 {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+.bab .bab-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.bab-wrapper .bab-row {
+  width: 100%;
+}
+.bab-wrapper .bab-content {
+  background-color: var(--question-color);
+  color: var(--text-color);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all .1s ease-in-out;
+}
+.bab-content + ul {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  box-shadow: 1px 1px 4px var(--question-color);
+  border-radius: 10px;
+  height: 0; 
+  overflow: hidden;
+  transition: .5s ease-in-out, background-color 0.1s;
+}
+.bab-content + ul li:first-child {
+  padding: .8rem 1rem 0 1rem;
+}
+.bab-content + ul li:last-child {
+  padding: .8rem 1rem .8rem 1rem;
+}
+p.message {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+p.message .login {
+  color: var(--main-color);
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

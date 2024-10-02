@@ -1,0 +1,54 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.container-dasbhoard .box-wrapper {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+	.tBukuWrapper ul li .box-label {
+		width: 9rem !important;
+	}
+	.tPenggunaWrapper ul li .box-label {
+		width: 11rem !important;
+	}
+    .head h1,
+    .head h1 i {
+        font-size: 1.1rem !important;
+    }
+    .head .search-box {
+        width: 200px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .main-container {
+        width: 100% !important;
+        left: 0 !important;
+    }
+    .navbar ul {
+        padding: 0 .6rem !important;
+    }
+    .container-dasbhoard .box-wrapper {
+		grid-template-columns: repeat(1, 1fr) !important;
+        gap: 1rem !important;
+	}
+    .container-daftar {
+        margin-bottom: 1rem !important;
+    }
+    .container-daftar .head {
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 1rem;
+    }
+    .container-daftar .head h1, .container-daftar .head h1 i {
+        font-size: 1.2rem !important;
+    }
+    .info-denda {
+        width: 100% !important;
+        left: 0 !important;
+    }
+    .daftar-pengembalian {
+        margin-bottom: 4rem !important;
+    }
+    footer {
+        position: unset !important;
+        margin-top: 3rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+}

@@ -1,0 +1,448 @@
+@media only screen and (max-width: 1024px) {
+	/* Navbar */
+	nav {
+		padding: 0 2.5rem;
+	}
+	nav ul.nav-links,
+	nav .box-dropdown {
+		display: none;
+	}
+	nav .mid-links {
+		flex-direction: column;
+		width: 100% !important;
+		max-width: 100% !important;
+		position: absolute;
+		top: 58px;
+		left: 0;
+		right: 0;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		height: 0;
+		overflow: hidden;
+		transition: all 0.3s ease-in-out !important;
+	}
+	nav .mid-links .box-dropdown {
+		display: flex;
+	}
+	.mid-links.active {
+		display: flex;
+		visibility: visible;
+		height: 22rem;
+	}
+	.hamburger-menu {
+		display: block;
+	}
+
+
+	/* Footer */
+	footer {
+		padding: 1.5rem;
+	}
+	.footer-section.info {
+		margin: 0 0 1.5rem 0;
+	}
+	.footer-section.panduan {
+		padding-left: 2rem;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	section {
+		margin: 0 auto;
+		max-width: 950px;
+		padding: 0 30px;
+	}
+
+	section.recent-book .card-container,
+	section.popular-book .card-container,
+	section.book-collection .card-container {
+		grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+	}
+
+
+	/* Halaman Home */
+	section.hero {
+		padding-left: 3rem;
+	}
+	.main-hero .hero-content h1 {
+		max-width: 100%;
+		font-size: 2rem;
+	}
+	.hero-content p {
+		max-width: 90%;
+		font-size: 0.95rem;
+	}
+	.main-hero .hero-image,
+	.hero-image img {
+		width: 26rem;
+	}
+
+
+	/* Halaman Tentang Kami */
+	.about-wrapper .about-content .info {
+		width: 90%;
+	}
+	.about-wrapper .about-img {
+		margin: 0;
+	}
+	.about-us .question {
+		width: 80% !important;
+		margin: 0 !important;
+	}
+	.question .question-row {
+		width: 100% !important;
+	}
+
+
+	/* Halaman Detail Buku */
+	.details-header .img {
+		width: 40% !important;
+	}
+	.details-header .details-content {
+		width: 60% !important;
+	}
+
+
+	/* Halaman Profil */
+	.history {
+		flex-direction: column;
+		gap: 2rem !important;
+	}
+	.borrowing .card-container,
+	.return .card-container {
+		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+	}
+
+	.header-profile .content-header {
+		left: 1rem !important;
+	}
+	.data-profile .data .box p {
+		max-width: 12.8rem !important;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+	}
+	.borrowing,
+	.return {
+		padding: 1rem .8rem !important;
+	}
+	.borrowing .card-container,
+	.return .card-container {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+		gap: .6rem !important;
+	}
+	.content-profile .card-content {
+		padding-top: 5px !important;
+	}
+	.content-profile .card-content a.btn-detail {
+		display: none;
+	}
+	.content-profile .card-content form {
+		margin-top: 1rem !important;
+	}
+	.content-profile .card-content div button {
+		background: transparent !important;
+		color: var(--main-color) !important;
+		font-style: normal !important;
+		text-decoration: underline !important;
+		padding: 0 !important;
+	}
+
+
+
+	/* Footer */
+	.footer-container {
+		display: flex;
+		justify-content: space-evenly !important;
+		align-items: center !important;
+		max-width: 950px !important;
+		width: 100% !important;
+	}
+	.footer-container .footer-section.info p {
+		width: 90%;
+	}
+	.footer-container .footer-section.kontak {
+		justify-content: center !important;
+		align-items: center !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/* Navbar */
+	nav {
+		padding: 0 1rem;
+	}
+	nav .logo img {
+		width: 2.8rem;
+		height: 2.8rem;
+	}
+	nav .logo h2 {
+		font-size: 1.5rem;
+		letter-spacing: 0.5px;
+	}
+	section {
+		padding: 0 14px;
+	}
+
+
+	/* Halaman Home */
+	section.hero {
+		max-width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.main-hero {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin-bottom: 5rem;
+	}
+	.hero-content {
+		justify-content: center;
+		align-items: center;
+		gap: 0.4rem;
+		padding: 0 1rem;
+	}
+	.hero-content h1 {
+		font-size: 1.7rem;
+		letter-spacing: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+	.hero-content p {
+		width: 100%;
+		max-width: 100%;
+	}
+	.hero-content p,
+	section.book-collection p {
+		font-size: 0.95rem;
+	}
+	.main-hero .hero-image {
+		width: 100%;
+	}
+	.hero-image img {
+		width: 22rem;
+		padding: 0;
+		height: 20rem !important;
+		padding-bottom: 5px;
+	}
+	section.recent-book h2,
+	section.popular-book h2 {
+		font-size: 1.5rem;
+	}
+	section.popular-book {
+		margin-top: 1rem !important;
+	}
+	.card-container {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+		gap: 10px !important;
+	}
+	.card {
+		padding: 0 !important;
+		border-radius: 5px !important;
+	}
+	.card-content {
+		padding: 10px !important;
+	}
+
+
+	/* Halaman Koleksi buku  */
+	section.book-collection h1 {
+		font-size: 1.7rem;
+	}
+	.book-collection .wrapper {
+		flex-direction: column-reverse;
+		text-align: left;
+		align-items: start !important;
+		justify-content: start !important;
+		gap: 1rem;
+		margin-bottom: 1em;
+	}
+	.book-collection form label,
+	.book-collection form select {
+		font-size: 0.95rem !important;
+	}
+	.book-collection .search-box {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	.book-collection .wrapper form {
+		text-align: left;
+	}
+	.no-result {
+		font-size: 1.2rem !important;
+	}
+
+
+	/* Halamana Tentang Kami */
+	section.about-us .about-wrapper {
+		grid-template-columns: 100%;
+	}
+	.about-content {
+		text-align: center;
+		margin-bottom: 0 !important;
+	}
+	.about-img {
+		margin: 0 !important;
+	}
+	.question {
+		margin: 0 0 1.2rem 0 !important;
+		width: 100% !important;
+	}
+	.question h2 {
+		font-size: 1.5rem !important;
+	}
+	.question-wrapper .question-row {
+		width: 95% !important;
+	}
+
+
+	/* Halaman Profil */
+	.head-profile svg {
+		height: 160px !important;
+	}
+	.header-profile .content-header {
+		left: 0!important;
+	}
+	.header-profile .logo img {
+		width: 5.9rem !important;
+		height: 5.9rem !important;
+	}
+	.header-profile .logo div {
+		left: 4.8rem !important;
+	}
+	.header-profile .logo div p {
+		max-width: 9rem !important;
+	} 
+	.data-profile .data .box p {
+		max-width: 100% !important;
+	}
+
+
+	section.content-profile {
+		padding: 0 1.5rem !important;
+		margin-top: 4.5rem !important;
+	}
+	.content-profile .data-profile {
+		flex-direction: column;
+		width: 100%;
+		gap: 1.5rem;
+	}
+	.data-profile .bio,
+	.data-profile .data {
+		width: 100% !important;
+	}
+	.data-profile .bio {
+		max-height: 11rem !important;
+	}
+	.bio p {
+		font-size: 0.96rem;
+	}
+	.data-profile .data {
+		grid-template-columns: 100% !important;
+		gap: 0.6rem !important;
+		padding: 0.6rem !important;
+	}
+	.data h3 {
+		font-size: 1.1rem !important;
+	}
+	.data p {
+		font-size: 0.96rem !important;
+	}
+	.data h3 i {
+		font-size: .5rem !important;
+	}
+	.history {
+		flex-direction: column;
+		gap: 2rem !important;
+	}
+	.history h2 {
+		font-size: 1.2rem !important;
+	}
+	.borrowing,
+	.return {
+		padding: 1rem .8rem !important;
+	}
+	.borrowing .card-container,
+	.return .card-container {
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
+		gap: .6rem !important;
+	}
+	.content-profile .card-content {
+		padding-top: 5px !important;
+	}
+	.content-profile .card-content a.btn-detail {
+		display: none;
+	}
+	.content-profile .card-content form {
+		margin-top: 1rem !important;
+	}
+	.content-profile .card-content div button {
+		background: transparent !important;
+		color: var(--main-color) !important;
+		font-style: normal !important;
+		text-decoration: underline !important;
+		padding: 0 !important;
+	}
+
+
+	/* Halaman Detail Buku */
+	section.book-details-peminjaman {
+		width: 100% !important;
+	}
+	.book-details-peminjaman .details-header .details-content,
+	.book-details-pengembalian .details-header .details-content {
+		height: 28rem !important;
+	}
+	.book-details-peminjaman .tabs button[role="tab"] {
+		font-size: 1.2rem !important;
+	}
+	.details-header {
+		flex-direction: column;
+		gap: 2.2rem !important;
+		margin: auto !important;
+		overflow: auto !important;
+	}
+	.details-header .img {
+		width: 85% !important;
+		margin: auto !important;
+	}
+	.details-header .details-content {
+		width: 100% !important;
+		overflow-y: auto !important;
+		height: 22rem !important;
+	}
+	.details-story div#panel4,
+	.details-story div#panel5 {
+		padding: 1.4rem 1rem .8rem 1rem !important;
+	}
+	button[role="tab"] {
+		padding: 0 20px 10px 20px !important;
+	}
+
+
+	/* Footer */
+	.footer-container h4 {
+		font-size: 1.4rem !important;
+		text-align: left !important;
+	}
+	.footer-section.info p,
+	.footer-section.kontak p,
+	.footer-section.panduan li a {
+		font-size: 0.95rem !important;
+	}
+	.footer-section.panduan ul li {
+		text-align: left !important;
+	}
+	.footer-section.panduan {
+		margin-bottom: 1.3rem;
+		margin-left: 0;
+		padding-left: 0;
+	}
+	.footer-section.kontak li i {
+		font-size: 1rem !important;
+	}
+	.footer-section.kontak h5 {
+		font-size: 1.2rem;
+	}
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+  --main-color: #7C00FE;
+  --main-gradient: linear-gradient(to right, #c266ff, #7c00fe);
+  --white-bg: #fff;
+  --dark-bg: #e5e5e7;
+  --text-color: #000;
+}
+body.active {
+	--main-color: #b366ff; 
+	--main-gradient: linear-gradient(to right, #c266ff, #7c00fe); 
+	--white-bg: #24204B;
+	--dark-bg: #16122B;
+	--text-color: #e5e5e7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  min-height: 100vh !important;
+  overflow: hidden;
+  background-color: var(--dark-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+}
+.container.daftar {
+  width: 500px;
+}
+.container h1 {
+  background: var(--main-gradient);
+  color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+  margin: 2rem 0 -20px 0;
+}
+form {
+  background-color: var(--white-bg);
+  width: 100%;
+  padding: .5rem 1rem 1.6rem 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 10px;
+  margin: .5rem 0;
+  transform: scale(.9);
+}
+form .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--white-bg);
+}
+form .logo img {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+}
+form h2 {
+  font-size: 1.8rem;
+  margin: .2rem 0 1rem 0;
+  align-self: center;
+  color: var(--text-color);
+}
+form .box-input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  place-content: center;
+  width: 100%;
+  gap: 0.6rem;
+}
+form .password {
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--dark-bg);
+  box-shadow: 1px 1px 1px gray;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 1rem;
+}
+.password input {
+  padding-right: 4px;
+}
+.password i {
+  cursor: pointer;
+  padding-right: 10px;
+  color: var(--text-color);
+}
+form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 0.8rem;
+  color: var(--text-color);
+  background-color: var(--dark-bg);
+}
+form input.login {
+  margin: 0 0 1rem 0;
+  box-shadow: 1px 1px 1px gray;
+}
+form input.daftar {
+  box-shadow: 1px 1px 1px gray;
+}
+form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--main-gradient);
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+form .daftar  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+form .daftar a {
+  color: var(--main-color);
+}

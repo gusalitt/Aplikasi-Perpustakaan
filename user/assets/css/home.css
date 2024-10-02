@@ -1,0 +1,179 @@
+/* Home Page */
+
+/* Section Hero */
+section.hero {
+	padding-top: 50px;
+	margin: 1.4em 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	width: 100%;
+	max-width: 100%;
+	/* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='500' preserveAspectRatio='none' viewBox='0 0 1440 500'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1026%26quot%3b)' fill='none'%3e%3cpath d='M842.332%2c460.916C862.339%2c460.59%2c879.819%2c447.821%2c889.095%2c430.091C897.729%2c413.587%2c895.078%2c394.147%2c885.677%2c378.067C876.376%2c362.158%2c860.744%2c350.88%2c842.332%2c350.105C822.478%2c349.269%2c802.474%2c357.141%2c792.166%2c374.13C781.504%2c391.703%2c782.563%2c413.865%2c792.85%2c431.661C803.128%2c449.441%2c821.798%2c461.251%2c842.332%2c460.916' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1310.609%2c495.796C1332.202%2c496.706%2c1351.479%2c484.071%2c1363.205%2c465.916C1376.165%2c445.85%2c1384.936%2c420.216%2c1372.659%2c399.725C1360.595%2c379.59%2c1334.044%2c376.809%2c1310.609%2c378.131C1289.86%2c379.302%2c1269.526%2c387.841%2c1259.606%2c406.103C1250.063%2c423.67%2c1255.284%2c444.407%2c1265.166%2c461.786C1275.19%2c479.414%2c1290.348%2c494.942%2c1310.609%2c495.796' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M265.692%2c442.676C288.598%2c443.956%2c311.707%2c433.395%2c322.801%2c413.314C333.601%2c393.766%2c328.114%2c370.074%2c316.26%2c351.147C305.204%2c333.494%2c286.494%2c321.062%2c265.692%2c322.131C246.374%2c323.123%2c232.721%2c338.976%2c223.387%2c355.918C214.458%2c372.125%2c210.55%2c390.864%2c218.66%2c407.496C227.857%2c426.357%2c244.741%2c441.506%2c265.692%2c442.676' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M879.774%2c375.234C910.819%2c377.132%2c938.675%2c355.126%2c952.388%2c327.209C964.722%2c302.101%2c956.893%2c273.001%2c941.452%2c249.675C927.734%2c228.953%2c904.612%2c218.325%2c879.774%2c217.517C853.182%2c216.652%2c824.032%2c222.38%2c810.726%2c245.42C797.418%2c268.463%2c808.566%2c295.689%2c821.062%2c319.182C834.68%2c344.786%2c850.828%2c373.465%2c879.774%2c375.234' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M227%2c182.487C246.098%2c182.101%2c257.722%2c163.472%2c266.598%2c146.558C274.673%2c131.171%2c278.675%2c113.858%2c271.262%2c98.142C262.611%2c79.802%2c247.278%2c62.537%2c227%2c62.612C206.805%2c62.687%2c192.277%2c80.377%2c183.302%2c98.468C175.401%2c114.394%2c176.331%2c132.443%2c184.534%2c148.215C193.53%2c165.512%2c207.508%2c182.88%2c227%2c182.487' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M583.942%2c232.757C599.916%2c233.569%2c615.247%2c225.42%2c623.444%2c211.685C631.844%2c197.611%2c632.143%2c179.976%2c623.896%2c165.812C615.699%2c151.736%2c600.231%2c143.754%2c583.942%2c143.847C567.819%2c143.939%2c552.169%2c151.938%2c544.774%2c166.265C537.864%2c179.652%2c543.185%2c195.016%2c550.831%2c207.996C558.328%2c220.723%2c569.19%2c232.008%2c583.942%2c232.757' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1337.113%2c395.405C1370.301%2c396.603%2c1402.833%2c382.201%2c1420.326%2c353.972C1438.757%2c324.23%2c1442.713%2c285.294%2c1423.45%2c256.083C1405.58%2c228.985%2c1369.565%2c227.058%2c1337.113%2c227.785C1306.372%2c228.473%2c1273.221%2c233.544%2c1257.225%2c259.805C1240.731%2c286.884%2c1247.598%2c321%2c1263.693%2c348.318C1279.511%2c375.166%2c1305.972%2c394.281%2c1337.113%2c395.405' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M247.421%2c405.69C287.006%2c407.675%2c325.029%2c386.428%2c344.431%2c351.866C363.464%2c317.962%2c358.717%2c276.489%2c338.644%2c243.19C319.254%2c211.025%2c284.961%2c192.119%2c247.421%2c190.942C207.534%2c189.691%2c164.581%2c201.973%2c145.72%2c237.141C127.537%2c271.045%2c146.039%2c309.975%2c165.915%2c342.915C184.904%2c374.385%2c210.712%2c403.849%2c247.421%2c405.69' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M427.601%2c400.273C447.165%2c399.831%2c467.982%2c395.154%2c477.721%2c378.18C487.426%2c361.265%2c482.098%2c340.259%2c471.381%2c323.967C461.763%2c309.346%2c445.087%2c302.721%2c427.601%2c301.992C408.426%2c301.192%2c387.901%2c304.233%2c377%2c320.029C364.7%2c337.853%2c361.846%2c362.22%2c373.397%2c380.538C384.39%2c397.971%2c406.997%2c400.739%2c427.601%2c400.273' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M844.875%2c121.568C869.565%2c120.726%2c884.882%2c97.915%2c897.436%2c76.639C910.292%2c54.852%2c923.567%2c30.018%2c912.242%2c7.398C900.044%2c-16.964%2c872.1%2c-29.382%2c844.875%2c-28.342C819.311%2c-27.366%2c798.089%2c-10.251%2c785.867%2c12.224C774.222%2c33.637%2c774.136%2c58.999%2c785.712%2c80.45C797.936%2c103.102%2c819.15%2c122.445%2c844.875%2c121.568' fill='rgba(124%2c 0%2c 254%2c 0.42)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1026'%3e%3crect width='1440' height='500' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e"); */
+	/* background-position: center; */
+	/* background-repeat: repeat-x; */
+}
+.main-hero {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	max-width: 1110px;
+	padding: 0 0 0 1rem;
+}
+.hero-content {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	padding-bottom: 4rem;
+}
+.hero-content h1 {
+	font-size: 2.1rem;
+	margin-bottom: 0.5rem;
+	color: var(--text-color);
+	letter-spacing: 1px;
+	text-shadow: 0 0 2px var(--white-bg);
+}
+.hero-content p {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	max-width: 85%;
+	letter-spacing: -0.5px;
+	color: var(--text-color);
+	text-shadow: 0 0 2px var(--white-bg);
+}
+.btn-hero {
+	padding: 0.8rem 1.4rem;
+	background-color: #7c00fe;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-family: "Ubuntu", sans-serif;
+}
+.hero-image {
+	width: 50%;
+}
+.hero-image img {
+	height: 100%;
+	width: 30rem;
+	transform: scale(0.9);
+	padding-bottom: 3rem;
+}
+
+/* Section buku terbaru */
+section.recent-book,
+section.popular-book {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+	color: var(--text-color);
+}
+.recent-book h2,
+.popular-book h2 {
+	font-size: 1.8rem;
+	color: var(--main-color);
+	max-width: 100%;
+}
+.popular-book h2 {
+	margin-top: 2rem;
+}
+section.recent-book .card-container,
+section.popular-book .card-container {
+	gap: 0.6rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-auto-rows: auto;
+	width: 100%;
+}
+.card {
+	width: 100%;
+	background-color: var(--white-bg);
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 15px 15px 0 15px;
+	border-bottom: 0.5px solid var(--pengarang-color);
+	border-right: 0.5px solid var(--pengarang-color);
+	display: flex;
+	flex-direction: column;
+	min-height: 320px;
+}
+.card:hover {
+	box-shadow: 0.1px 0.1px 2px var(--main-color), -0.1px -0.1px 2px var(--main-color);
+	border-bottom: 0px solid var(--pengarang-color);
+	border-right: 0px solid var(--pengarang-color);
+}
+.card a.cover-book {
+	overflow: hidden;
+	display: block;
+	height: 220px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.card a img {
+	width: 100%;
+	transition: all 0.2s ease-in-out;
+	object-fit: cover;
+	overflow: hidden;
+}
+.card a.cover-book:hover img {
+	transform: scale(1.2);
+}
+.card-content {
+	padding: 0 0 10px 0;
+	text-align: left;
+	flex: 1;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+.title-book {
+	font-size: 1.05rem;
+	margin: 4px 0 8px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pengarang {
+	font-size: 0.8rem;
+	color: var(--pengarang-color);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pengarang i {
+	font-size: 0.8rem;
+}
+.btn-detail {
+	margin-top: auto;
+	cursor: pointer;
+	color: var(--main-color);
+	border-radius: 5px;
+	font-size: 0.9rem;
+	background: none;
+}
+.btn-detail:hover {
+	text-decoration: underline;
+}
+.popular-book a.see-all {
+	margin: auto;
+	display: block;
+	padding: 0.7rem 1rem;
+	border-radius: 30px;
+	font-size: 0.9rem;
+	margin-top: 1.3rem;
+	text-align: center;
+	color: #fff;
+	background: var(--main-gradient);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}

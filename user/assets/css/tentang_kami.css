@@ -1,0 +1,117 @@
+section.about-us {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+	color: var(--text-color);
+}
+.about-wrapper {
+  display: grid; 
+  grid-template-columns: 55% 45%;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+}
+.about-content {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.about-content .logo {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-content .logo h1 {
+  font-family: "Kaushan Script", "Ubuntu", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.about-content .logo img {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+.about-content .info,
+.about-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.about-content .info {
+  width: 98%;
+}
+.about-content .info p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.about-img {
+  height: 90%;
+  align-self: self-start;
+  width: 100%;
+  margin-right: 2.8rem;
+}
+.about-img img {
+  display: block;
+  width: 480px;
+  max-width: 100%;
+  height: 85%;
+}
+
+.about-us .question {
+  width: 80%;
+  margin: 5px auto 2rem auto;
+}
+.question h2 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.question .question-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.question-wrapper .question-row {
+  width: 80%;
+}
+.question-wrapper .question-content {
+  background-color: var(--question-color);
+  color: var(--text-color);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all .1s ease-in-out;
+}
+.question-content + ul {
+  background-color: var(--white-bg);
+  color: var(--text-color);
+  box-shadow: 1px 1px 4px var(--question-color);
+  border-radius: 10px;
+  height: 0; 
+  overflow: hidden;
+  transition: .5s ease-in-out, background-color 0.1s;
+}
+.question-content + ul li:first-child {
+  padding: .8rem 1rem 0 1rem;
+}
+.question-content + ul li:last-child {
+  padding: .8rem 1rem .8rem 1rem;
+}
