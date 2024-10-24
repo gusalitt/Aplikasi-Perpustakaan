@@ -1,5 +1,5 @@
-CREATE DATABASE perpustakaan;
-USE perpustakaan;
+CREATE DATABASE db_perpus;
+USE db_perpus;
 
 CREATE TABLE `admin`(
 	`id_admin` INT AUTO_INCREMENT PRIMARY KEY,

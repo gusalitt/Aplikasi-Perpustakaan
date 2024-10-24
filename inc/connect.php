@@ -2,7 +2,7 @@
 $servername = 'localhost';
 $username = 'root';
 $password = '';
-$dbname = 'perpustakaan';
+$dbname = 'db_perpus';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

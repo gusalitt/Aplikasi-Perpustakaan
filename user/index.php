@@ -56,6 +56,7 @@
     }
   ?>
 </head>
+<body>
   <header>
     <nav>
       <div class="logo">
@@ -268,7 +269,7 @@
     document.getElementById('hamburger-menu').addEventListener('click', function(e) {
   const navLinks = document.querySelector('.mid-links');
   navLinks.classList.toggle('active');
-});
+  });
 
   </script>
 </body>
