@@ -52,11 +52,11 @@ Langkah-langkah untuk menginstal proyek ini.
 ### 1. **Instal via Git**:
 
    ```bash
-   git clone https://github.com/Gus-Alitt/Aplikasi-Perpustakaan.git
+   git clone https://github.com/gusalitt/Aplikasi-Perpustakaan.git
    ```
 
 ### 2. **Instal via ZIP**:
-   1. Klik [di sini](https://github.com/gus-alitt/Aplikasi-Perpustakaan/archive/refs/heads/main.zip) untuk menginstal seluruh project dalam format zip.
+   1. Klik [di sini](https://github.com/gusalitt/Aplikasi-Perpustakaan/archive/refs/heads/main.zip) untuk menginstal seluruh project dalam format zip.
    2. Lalu ekstrak file zip yang telah di instal.
 
 ---
